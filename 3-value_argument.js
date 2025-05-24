@@ -1,9 +1,4 @@
-const [ , , ...args] = process.argv;
+#!/usr/bin/node
 
-switch (true){
-    case args[0] === undefined:
-        console.log("No argument");
-        break;
-    default:
-        console.log("Argument found");
-}
+const arg = process.argv[2];
+console.log(arg !== undefined ? arg : 'No argument');
